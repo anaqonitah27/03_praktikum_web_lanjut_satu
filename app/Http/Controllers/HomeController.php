@@ -23,6 +23,26 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('home', ['title' => '- Home Page']);
+    }
+
+    public function about()
+    {
+        return view('about', ['title' => '- About Page']);
+    }
+    
+    public function location()
+    {
+        return view('location', ['title' => '- Location Page']);
+    }
+
+    public function menu()
+    {
+        return view('menu', ['title' => '- Menu Page']);
+    }
+
+    public function contact()
+    {
+        return view('contact', ['title' => '- Contact Page']);
     }
 }
