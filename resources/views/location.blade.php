@@ -1,9 +1,5 @@
 @extends('master')
 
-@section('title')
-    {{$title}}
-@endsection
-
 @section('content')
 
 <div class="mapwrapper">

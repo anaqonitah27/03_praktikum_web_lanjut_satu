@@ -17,10 +17,18 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Auth::routes();
+Route::get('/about', function () {
+    return view('about');
+});
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('home');
-Route::get('/location', [App\Http\Controllers\HomeController::class, 'location'])->name('home');
-Route::get('/menu', [App\Http\Controllers\HomeController::class, 'menu'])->name('home');
-Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('home');
+Route::get('/location', function () {
+    return view('location');
+});
+
+Route::get('/menu', function () {
+    return view('menu');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
